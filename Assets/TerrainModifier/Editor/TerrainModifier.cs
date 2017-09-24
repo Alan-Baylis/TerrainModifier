@@ -1,7 +1,7 @@
 /*************************************************************************
- *  Copyright (C), 2017-2018, Mogoson tech. Co., Ltd.
+ *  Copyright (C), 2017-2018, Mogoson Tech. Co., Ltd.
  *  FileName: TerrainModifier.cs
- *  Author: Mogoson   Version: 1.0   Date: 8/31/2017
+ *  Author: Mogoson   Version: 0.1.0   Date: 8/31/2017
  *  Version Description:
  *    Internal develop version,mainly to achieve its function.
  *  File Description:
@@ -14,7 +14,7 @@
  *     1.
  *  History:
  *    <ID>    <author>      <time>      <version>      <description>
- *     1.     Mogoson     8/31/2017       1.0        Build this file.
+ *     1.     Mogoson     8/31/2017       0.1.0       Create this file.
  *************************************************************************/
 
 namespace Developer.TerrainModifier
@@ -25,11 +25,11 @@ namespace Developer.TerrainModifier
     public class TerrainModifier : ScriptableWizard
     {
         #region Property and Field
-        [Tooltip("Target terrain data.")]
+        [Tooltip("Target modify terrain data.")]
         public TerrainData terrainData;
 
-        [Tooltip("Add height base on current.")]
-        public float addHeight = 0;
+        [Tooltip("Raise height base on current.")]
+        public float raiseHeight = 0;
         #endregion
 
         #region Private Method
@@ -51,20 +51,20 @@ namespace Developer.TerrainModifier
         {
             var modify = EditorUtility.DisplayDialog(
                 "Modify Confirm",
-                "Modify operate can not be recovered!\n"
-                + "Make sure you have a backup of target terrain data.\n"
-                + "Don't set a negative value to the \"Add Height\" unless you know terrain data inside out.",
+                "Modify operate can not be recovered!\n" +
+                "Make sure you have a backup of target terrain data.\n" +
+                "Don't set a negative value to the \"Raise Height\" unless you know terrain data inside out.",
                 "Modify",
                 "Cancle");
             if (modify)
             {
                 var heights = terrainData.GetHeights(0, 0, terrainData.heightmapWidth, terrainData.heightmapHeight);
-                var normalizedHeight = addHeight / terrainData.size.y;
+                var relativeRaiseHeight = raiseHeight / terrainData.size.y;
                 for (int w = 0; w < terrainData.heightmapWidth; w++)
                 {
                     for (int h = 0; h < terrainData.heightmapHeight; h++)
                     {
-                        heights[w, h] += normalizedHeight;
+                        heights[w, h] += relativeRaiseHeight;
                     }
                 }
                 terrainData.SetHeights(0, 0, heights);
