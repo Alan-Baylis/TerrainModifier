@@ -17,11 +17,11 @@
  *     1.     Mogoson     8/31/2017       0.1.0       Create this file.
  *************************************************************************/
 
+using UnityEditor;
+using UnityEngine;
+
 namespace Developer.TerrainModifier
 {
-    using UnityEditor;
-    using UnityEngine;
-
     public class TerrainModifier : ScriptableWizard
     {
         #region Property and Field
