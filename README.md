@@ -28,7 +28,7 @@
 ## Preview
 - TerrainModifier
 
-![Terrain Modifier](./Attachments/TerrainModifier.png)
+![Terrain Modifier](./Attachments/README_Image/TerrainModifier.gif)
 
 ## Contact
 - If you have any questions, feel free to contact me at mogoson@qq.com.

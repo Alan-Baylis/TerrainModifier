@@ -25,10 +25,10 @@
 ## 实现
 - TerrainModifier： 绘制扩展编辑器窗口，整体修改地形高度数据。
 
-## 图示
+## 预览
 - TerrainModifier
 
-![Terrain Modifier](./Attachments/TerrainModifier.png)
+![Terrain Modifier](./Attachments/README_Image/TerrainModifier.gif)
 
 ## 联系
 - 如果你有任何问题或者建议，欢迎通过mogoson@qq.com联系我。
