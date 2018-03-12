@@ -1,12 +1,12 @@
-/*************************************************************************
- *  Copyright (C), 2017-2018, Mogoson Tech. Co., Ltd.
+﻿/*************************************************************************
+ *  Copyright © 2017-2018 Mogoson. All rights reserved.
  *------------------------------------------------------------------------
  *  File         :  TerrainModifier.cs
  *  Description  :  Modify(up or down) the terrain heightmap data.
  *------------------------------------------------------------------------
  *  Author       :  Mogoson
  *  Version      :  0.1.0
- *  Date         :  8/31/2017
+ *  Date         :  3/12/2018
  *  Description  :  Initial development version.
  *************************************************************************/
 
@@ -17,7 +17,7 @@ namespace Developer.TerrainModifier
 {
     public class TerrainModifier : ScriptableWizard
     {
-        #region Property and Field
+        #region Field and Property
         [Tooltip("Target modify terrain data.")]
         public TerrainData terrainData;
 
@@ -44,9 +44,9 @@ namespace Developer.TerrainModifier
         {
             var modify = EditorUtility.DisplayDialog(
                 "Modify Confirm",
-                "Modify operate can not be recovered!\n" +
+                "Modify operate can not be recovered.\n" +
                 "Make sure you have a backup of target terrain data.\n" +
-                "Don't set a negative value to the \"Raise Height\" unless you know terrain data inside out.",
+                "Don't set a negative value to the Raise Height unless you know terrain data inside out.",
                 "Modify",
                 "Cancle");
             if (modify)

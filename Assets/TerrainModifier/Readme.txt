@@ -1,7 +1,7 @@
-==========================================================================
-  Copyright (C), 2017-2018, Mogoson Tech. Co., Ltd.
+﻿==========================================================================
+  Copyright © 2017-2018 Mogoson. All rights reserved.
   Name: TerrainModifier
-  Author: Mogoson   Version: 0.1.0   Date: 8/31/2017
+  Author: Mogoson   Version: 0.1.0   Date: 3/12/2018
 ==========================================================================
   [Summary]
     Unity Terrain modifier.
@@ -29,7 +29,7 @@
     "Modify" operate can not be recovered, make sure you have a backup
     of target terrain data.
 
-    Don't set a negative value to the "Raise Height" unless you know the
+    Don't set a negative value to the Raise Height unless you know the
     terrain data inside out.
 --------------------------------------------------------------------------
   [Resource]
