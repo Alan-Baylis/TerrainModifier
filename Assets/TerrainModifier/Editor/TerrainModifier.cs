@@ -13,7 +13,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace Developer.TerrainModifier
+namespace Mogoson.TerrainModifier
 {
     public class TerrainModifier : ScriptableWizard
     {
