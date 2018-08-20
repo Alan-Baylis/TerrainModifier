@@ -26,7 +26,7 @@
 - TerrainModifier： 绘制扩展编辑器窗口，整体修改地形高度数据。
 
 ## 预览
-- TerrainModifier
+- Terrain Modifier
 
 ![Terrain Modifier](./Attachments/README_Image/TerrainModifier.gif)
 

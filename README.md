@@ -26,7 +26,7 @@
 - TerrainModifier : Draw extend editor window and modify(up or down) the terrain heightmap data.
 
 ## Preview
-- TerrainModifier
+- Terrain Modifier
 
 ![Terrain Modifier](./Attachments/README_Image/TerrainModifier.gif)
 
